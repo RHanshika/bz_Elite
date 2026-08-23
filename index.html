@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LRU Cache Visualizer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>LRU Cache Visualizer</h1>
+    <p class="subtitle">Watch how a Least Recently Used cache evicts items when it runs out of room.</p>
+
+    <div class="controls">
+      <div class="field">
+        <label for="cap">Capacity</label>
+        <input type="number" id="cap" min="1" max="8" value="4">
+      </div>
+      <div class="field">
+        <label for="keyIn">Key</label>
+        <input type="text" id="keyIn" placeholder="A">
+      </div>
+      <div class="field">
+        <label for="valIn">Value</label>
+        <input type="text" id="valIn" placeholder="1">
+      </div>
+      <button id="putBtn">Put</button>
+      <button id="getBtn">Get</button>
+      <button id="resetBtn" class="secondary">Reset</button>
+    </div>
+
+    <p id="err" class="error"></p>
+
+    <p class="hint">Most recently used → least recently used (leftmost is evicted next)</p>
+    <div id="cacheRow" class="cache-row"></div>
+
+    <div class="log-section">
+      <p class="log-title">Log</p>
+      <div id="log" class="log"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
