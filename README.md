@@ -7,3 +7,4 @@
 5. Explain why Circular DLL is preferred over arrays and singly LL. 
 6. Code with proper documentation / comments. 
 7. A web visualizer app showing LRU cache working. Plain HTML +CSS +JS
+   -> index.html, style.css, script.js
